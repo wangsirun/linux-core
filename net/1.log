@@ -1,0 +1,109 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 540  of event 'sched:sched_switch'
+# Event count (approx.): 540
+#
+# Overhead  Trace output                                                                                                                      
+# ........  ..................................................................................................................................
+#
+     8.70%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+     7.59%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+     6.67%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+     5.93%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+     5.56%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+     4.26%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/4 next_pid=0 next_prio=120
+     3.89%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+     3.70%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120
+     3.52%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+     3.33%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+     2.78%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+     2.78%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+     2.78%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120
+     2.59%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+     2.59%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/6 next_pid=0 next_prio=120
+     2.04%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+     1.85%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+     1.85%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/6 next_pid=0 next_prio=120
+     1.67%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+     1.67%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+     1.67%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/7 next_pid=0 next_prio=120
+     1.48%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+     1.48%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/4 next_pid=0 next_prio=120
+     1.48%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+     1.30%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+     1.11%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/5 next_pid=0 next_prio=120
+     0.93%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+     0.93%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+     0.74%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+     0.74%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=swapper/5 next_pid=0 next_prio=120
+     0.56%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+     0.37%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=2638 next_prio=120
+     0.37%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=tracker-extract next_pid=1256213 next_prio=139
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=R ==> next_comm=sugov:0 next_pid=629 next_prio=-1
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=awk next_pid=1337971 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=2957 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=6334 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=858640 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=grep next_pid=1336111 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=grep next_pid=1336242 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=grep next_pid=1338326 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=node next_pid=3217118 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=pool-tracker-mi next_pid=1335960 next_prio=139
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=ps next_pid=1337311 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=python3 next_pid=3225746 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=python3 next_pid=6642 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=sh next_pid=1336944 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=single next_pid=1256279 next_prio=139
+     0.19%  prev_comm=fast-discovery- prev_pid=3219103 prev_prio=120 prev_state=S ==> next_comm=tracker-extract next_pid=1256213 next_prio=139
+     0.19%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=R ==> next_comm=containerd-shim next_pid=2730 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=373873 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=858352 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219181 prev_prio=120 prev_state=S ==> next_comm=python3 next_pid=10563 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=R ==> next_comm=kworker/0:0 next_pid=893891 next_prio=53
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=R ==> next_comm=sugov:4 next_pid=632 next_prio=-1
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=R+ ==> next_comm=sugov:0 next_pid=629 next_prio=-1
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=R+ ==> next_comm=sugov:4 next_pid=632 next_prio=-1
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=R+ ==> next_comm=sugov:8 next_pid=630 next_prio=-1
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd next_pid=1604 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd next_pid=1928 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=113184 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=2599 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=2727 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=3020 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=357233 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=5406 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=858350 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=858352 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=docker next_pid=1336316 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=dockerd next_pid=2677 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=grep next_pid=1335950 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=head next_pid=1336091 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=ps next_pid=1334422 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=ps next_pid=1334660 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=ps next_pid=1338359 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=python3 next_pid=1336705 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219183 prev_prio=120 prev_state=S ==> next_comm=sh next_pid=1334434 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=awk next_pid=1336559 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=2775 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=containerd-shim next_pid=41775 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=dockerd next_pid=1775 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=fast-discovery- next_pid=6619 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=gdbus next_pid=1256217 next_prio=139
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=grep next_pid=1336424 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=head next_pid=1335274 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=ps next_pid=1335019 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=ps next_pid=1338400 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=python3 next_pid=1337920 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=sh next_pid=1334930 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=single next_pid=1256279 next_prio=139
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=swapper/7 next_pid=0 next_prio=120
+     0.19%  prev_comm=fast-discovery- prev_pid=3219185 prev_prio=120 prev_state=S ==> next_comm=tracker-extract next_pid=1256213 next_prio=139
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#
