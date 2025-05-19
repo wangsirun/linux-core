@@ -95,10 +95,10 @@ modules.order
 #
 # Generated include files
 #
-/include/config/
-/include/generated/
-/include/ksym/
-/arch/*/include/generated/
+# /include/config/
+# /include/generated/
+# /include/ksym/
+# /arch/*/include/generated/
 
 # stgit generated dirs
 patches-*
@@ -134,15 +134,15 @@ signing_key.x509
 x509.genkey
 
 # Kconfig presets
-/all.config
-/alldef.config
-/allmod.config
-/allno.config
-/allrandom.config
-/allyes.config
+# all.config
+# alldef.config
+# allmod.config
+# allno.config
+# allrandom.config
+# allyes.config
 
 # Kdevelop4
 *.kdev4
 
 # Clang's compilation database file
-/compile_commands.json
+# compile_commands.json
