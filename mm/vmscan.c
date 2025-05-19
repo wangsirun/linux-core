@@ -96,6 +96,13 @@ struct scan_control {
 	 * result, then go back for one more cycle that reclaims the protected
 	 * memory (memcg_low_reclaim) to avert OOM.
 	 */
+	/*
+	这段注释解释了在Linux内核中，当控制组（cgroup）的内存使用量低于其设定的memory.low阈值时，这部分内存会受到保护，避免被交换出或者回收，除非系统面临内存不足（OOM）的威胁。具体逻辑如下：
+	内存保护：只要不威胁到系统的内存不足（OOM），控制组内存低于memory.low的部分会被保护起来，不会被回收或交换。
+	降低回收力度：如果在内存回收过程中，由于控制组的memory.low设置，导致某些控制组的内存被以降低的力度回收，或者完全被跳过（即memcg_low_skipped），并且结果是没有足够的内存被回收，那么系统将进行另一个内存回收周期。
+	避免OOM：在第二个回收周期中，即使内存使用量低于memory.low，也会回收这些被保护的内存（即memcg_low_reclaim），以避免系统内存不足（OOM）的情况发生。
+	这种机制确保了在内存紧张的情况下，系统可以回收那些原本受保护的控制组内存，从而避免内存不足导致的系统崩溃或服务中断。同时，这也保证了在大多数情况下，控制组设置的memory.low阈值能够有效保护其内存不被随意回收。
+	*/
 	unsigned int memcg_low_reclaim:1;
 	unsigned int memcg_low_skipped:1;
 
@@ -1703,6 +1710,7 @@ static unsigned long isolate_lru_pages(unsigned long nr_to_scan,
 		struct page *page;
 
 		page = lru_to_page(src);
+		// 将所有的lru中的page的flags都预取出来
 		prefetchw_prev_lru_page(page, src, flags);
 
 		VM_BUG_ON_PAGE(!PageLRU(page), page);
@@ -1711,6 +1719,7 @@ static unsigned long isolate_lru_pages(unsigned long nr_to_scan,
 		total_scan += nr_pages;
 
 		if (page_zonenum(page) > sc->reclaim_idx) {
+			// 将page添加到pages_skipped链表中
 			list_move(&page->lru, &pages_skipped);
 			nr_skipped[page_zonenum(page)] += nr_pages;
 			continue;
@@ -3429,6 +3438,7 @@ static void age_active_anon(struct pglist_data *pgdat,
 		struct lruvec *lruvec = mem_cgroup_lruvec(pgdat, memcg);
 
 		if (inactive_list_is_low(lruvec, false, sc, true))
+			// 收缩活跃匿名页面列表
 			shrink_active_list(SWAP_CLUSTER_MAX, lruvec,
 					   sc, LRU_ACTIVE_ANON);
 
@@ -3464,6 +3474,7 @@ static bool pgdat_watermark_boosted(pg_data_t *pgdat, int classzone_idx)
  * Returns true if there is an eligible zone balanced for the request order
  * and classzone_idx
  */
+// 检查内存节点是否是平衡状态
 static bool pgdat_balanced(pg_data_t *pgdat, int order, int classzone_idx)
 {
 	int i;
@@ -3525,6 +3536,7 @@ static bool prepare_kswapd_sleep(pg_data_t *pgdat, int order, int classzone_idx)
 	 * throttled again. The difference from wake ups in balance_pgdat() is
 	 * that here we are under prepare_to_wait().
 	 */
+	// 当kswapd准备睡眠时，不应该有进程在pfmemalloc_wait上等待。
 	if (waitqueue_active(&pgdat->pfmemalloc_wait))
 		wake_up_all(&pgdat->pfmemalloc_wait);
 
@@ -3924,6 +3936,7 @@ static int kswapd(void *p)
 	const struct cpumask *cpumask = cpumask_of_node(pgdat->node_id);
 
 	if (!cpumask_empty(cpumask))
+		// 设置cpu的亲和性,tsk绑定到nid的cpu上
 		set_cpus_allowed_ptr(tsk, cpumask);
 
 	/*

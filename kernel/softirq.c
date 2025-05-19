@@ -589,6 +589,7 @@ void __init softirq_init(void)
 
 static int ksoftirqd_should_run(unsigned int cpu)
 {
+	// 是否有软中断
 	return local_softirq_pending();
 }
 

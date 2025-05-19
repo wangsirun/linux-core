@@ -267,6 +267,7 @@ static inline void prefetch(const void *ptr)
 }
 
 #define ARCH_HAS_PREFETCHW
+// 对指定内存地址的数据进行预取操作
 static inline void prefetchw(const void *ptr)
 {
 	asm volatile("prfm pstl1keep, %a0\n" : : "p" (ptr));

@@ -185,6 +185,7 @@ struct bdi_writeback {
 #endif
 };
 
+// 是一个用于描述后备设备信息的数据结构,其中包含了设备的ID、名称、读写能力、读写带宽等信息。
 struct backing_dev_info {
 	u64 id;
 	struct rb_node rb_node; /* keyed by ->id */
